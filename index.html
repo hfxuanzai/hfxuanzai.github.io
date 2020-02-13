@@ -18,6 +18,16 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  <script language="javascript">
+    function check(){
+      alert("张文心，我爱你");
+      alert("我见不到你，我好想你");
+      alert("等肺炎结束了，我要带你去吃好吃的")
+      alert("还要去旅行，还要抱抱睡觉!(我想🍑)")
+      window.location.href="formywenxin.html"; 
+    }
+//     document.getElementById("btn").addEventListener('click',check(),false);
+  </script>
   <body>
   
  
@@ -35,7 +45,7 @@
             </div>
            
             <div class="form-group">
-              <button align="center" type="submit" id="btn" >点我开箱~</button>
+              <button align="center" onclick="check()" >点我开箱~</button>
               
             </div>
  
@@ -47,13 +57,7 @@
     </div>
   </div>
 </div>
-    <script language="javascript">
-      function check(){
-        alert("here");
-        window.location.href="formywenxin.html"; 
-      }
-      document.getElementById("btn").addEventListener('click',check(),false);
-    </script>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
