@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>给zwx的礼物</title>
+    <title>情人节快乐</title>
  
     <body bgcolor="pink"></body>
     <!-- Bootstrap -->
@@ -31,14 +31,11 @@
           <div class="form-horizontal" role="form" align="center">
  
             <div class="form-group">
-               <label for="input" class="control-label" >PLEASE ENTER THE SECRET</label>
-              <br>
-                <input  class="form-control" id="input" placeholder="  输入我们在一起的那一天" />
-      
+               <label for="input" class="control-label" >抬头看看网址！</label>
             </div>
            
             <div class="form-group">
-              <button align="center" type="submit" οnclick="check()" class="btn btn-block btn-primary btn-lg ">ENTER</button>
+              <button align="center" type="submit" id="btn" >点我开箱~</button>
               
             </div>
  
@@ -52,27 +49,10 @@
 </div>
     <script language="javascript">
       function check(){
-        var value = document.getElementById("input").value; 
-         
-        if(value=="1212"||value=="191212"||value=="20191212"){
-          window.location.href="formywenxin.html";
-           return true;
-          
-        } 
-         else{
-          alert("secret is false");
-          return false;
-         }
-       
+        alert("here");
+        window.location.href="formywenxin.html"; 
       }
-       
-    document.οnkeydοwn=keyListener;
-    function keyListener(e){
-      // 当按下回车键，执行我们的代码
-    if(e.keyCode == 13){
-      check();
-    }
-}
+      document.getElementById("btn").addEventListener('click',check(),false);
     </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="bootstrap/js/jquery-1.11.3.min.js"></script>
